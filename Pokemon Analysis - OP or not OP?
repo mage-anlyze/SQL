@@ -452,7 +452,7 @@ select Type_1 as "Pokemon Type",ROUND(avg(HP)) as "Average HP",ROUND(avg(Attack)
 	
 select Type_1 as "Pokemon Type",ROUND(avg(HP)) as "Average HP",ROUND(avg(Attack)) as "Average Attack Power",ROUND(avg(sp_Atk)) as "Average Special Attack Power",ROUND(avg(Defense)) as "Average Defense",ROUND(avg(Sp_Def)) as "Average Special Defense",ROUND(avg(Speed)) as "Average Speed",
 	CASE
-        	when avg(HP) >70 then "OP"
+            when avg(HP) >70 then "OP"
             when avg(HP) <70 then "Not OP"
             END as "OP or Not OP?"
         from Pokemon
