@@ -50,3 +50,11 @@ SELECT count(customers.acctnum),
        LEFT JOIN
        bit_db.customers ON bit_db.febsales.orderID = bit_db.customers.order_id
  WHERE quantity > 2;
+ 
+ #8. List all products sold in Los Angeles in February and how many of each were sold.
+ SELECT product,
+       sum(quantity),
+       location
+  FROM febsales
+ WHERE location LIKE '%Los Angeles%'
+ GROUP BY product;
