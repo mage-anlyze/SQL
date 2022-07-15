@@ -1,5 +1,6 @@
 # In this SQL, I answered multiple questions relating to customer sales, tracking sales as they related to sales agents, and other questions to quantify the data set.
 
+
 1. Show Customers (their full names, customer ID, and country) who are not in the US. (Hint: != or <> can be used to say "is not equal to").
 
 SELECT firstname,
